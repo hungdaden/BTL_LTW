@@ -178,6 +178,48 @@ section:nth-child(even){
     background: #eee;
 }
 
+.sub-heading{
+  text-align: center;
+  color: var(--black);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.heading{
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.shopall .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.shopall .box-container .box .fa-heart
+.shopall .box-container .box .fa-eye{
+  position: absolute;
+  top: 1.5rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.shopall .box-container .box .fa-heart{
+  right: 1.5rem;
+}
+
+.shopall .box-container .box .fa-eye{
+  left: 1.5rem;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -192,7 +234,7 @@ section:nth-child(even){
 .btn:hover{
     background: var(--black);
     letter-spacing: .1rem;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 header{
@@ -251,6 +293,7 @@ header .icons a{
     color: var(--black);
     border-radius: 50%;
     background: #eee ;
+    transition: 0.4s ease-in-out;
 }
 
 header .icons i:hover,
@@ -266,7 +309,7 @@ header .icons #menu-bars {
 
 #search-form{
     position: fixed;
-    top: -110%; left: 0;
+    top: 0; left: 0;
     height: 100%;
     width: 100%;
     z-index: 1004;
